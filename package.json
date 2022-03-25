@@ -19,7 +19,9 @@
     "version": "node scripts/version.js",
     "postversion": "node scripts/postversion.js",
     "bump": "npm version patch -m 'Bump version to %s.'",
-    "bump:minor": "npm version minor -m 'Bump version to %s.'"
+    "bump:minor": "npm version minor -m 'Bump version to %s.'",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">= 6.0.0"
@@ -62,6 +64,8 @@
   },
   "dependencies": {
     "bs58check": "^2.1.2",
-    "cashaddrjs-slp": "^0.2.12"
-  }
+    "cashaddrjs-slp": "^0.2.12",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
