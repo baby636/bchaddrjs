@@ -57,7 +57,7 @@
     "mustache": "^2.3.2",
     "nyc": "^11.9.0",
     "shelljs": "^0.8.2",
-    "standard": "^10.0.3",
+    "standard": "^11.0.0",
     "uglify-es": "^3.3.9"
   },
   "dependencies": {
